@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    min-height: 100vh;
+    width: 100%;
+    background: #f0f0f0;
+    font-family: monospace;
+}
+
+.wrapper {
+    min-height: 100vh;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.gameBar {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.gameBar .timer, .gameBar .movies {
+    font-size: 18px;
+}
+
+.field {
+    position: relative;
+}
+
+.palete {
+    position: absolute;
+    display: grid;
+    place-items: center;
+    background: rgb(247, 211, 32);
+    font-size: 1.5rem;
+    border-radius: 5px;
+    user-select: none;
+    cursor: pointer;
+
+    transition-property: top, left;
+    transition-duration: 0.1s;
+}
